@@ -1,0 +1,42 @@
+<html>
+
+<style type="text/css">
+        .code {
+            font-family: monospace;
+        }
+</style>
+
+<body>
+
+<head><title>Search Module</title></head>
+
+<h1>6. Search Module</h1>
+<p>This module will be used by all the registered users to search the database for a list of relevant radiology records and to view medical images with the zoom-in facility.</p>
+
+<div id="6.1">
+<h2>6.1 Search Condition</h2>
+<p>Clicking the "<b>Search for radiology records</b>" hyperlink will directe the user to the search page.</p>
+<p>Enter the <b>Search keys</b> for the search. Search keys cannot be blank. If you have multiple search keys, use comma to separate them.</p>
+<p>User can optionally specify a <b>Time period</b> for the search.</p> 
+<p>Radiology records are defaultly ranked based on the following function with the largest first:</p>
+<ul>
+	<span class="code">Rank(record_id) = 6*frequency(patient_name) + 3*frequency(diagnosis) + frequency(description)</span> </br>
+	<p>where the term frequency(column_name) represents the value returned by the SCORE function of the corresponding CONTAINS function.Note that the value returned by SCORE(n) is propositional to, but not exactly, the number of occurrences of the key word(s) in the respective column.</p>
+</ul>
+<p>However, user can also indicate that the ranking to be based on timing, i.e., most-recent-first or most-recent-last, then the ranking shall be done accordingly.</p>
+<p>Click the "<b>Search</b>" button to search under the specified condition.</p>
+</div>
+
+<div id="6.2">
+<h2>6.2 Search Result</h2>
+<p>The search module, upon receiving the search condition, will display a list of all radiology records that satisfy the search condition, and are accessible to the user by the security module.</p>
+<p>The search results are printed in a table. Each record displayed shall contain all the information, including the list of thumbnails of medical images, of the record. The specified medical image will be displayed in the browser upon an image thumbnail is clicked.</p>
+<p>The security module of the system guarantees proper accesses to radiology records. That is, a patient can only view his/her own records; a doctor can only view records of their patients; a radiologist can only review records conducted by oneself; and an administrator can view any records.</p> 
+<p>User can modify the search condition and click the "<b>Search</b>" button to perform another search.</p>
+</div>
+	<FORM NAME='backForm' ACTION='Documentation.html' METHOD='post'>
+	<INPUT TYPE='submit' NAME='Back' VALUE='RETURN'>
+	</FORM>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<HTML>
+<BODY>
+<%
+	session.removeAttribute("USERNAME");
+	session.removeAttribute("PASSWORD");
+	session.removeAttribute("person_id");
+	session.removeAttribute("class");
+	response.sendRedirect("Login.html");
+%>
+</BODY>
+</HTML>

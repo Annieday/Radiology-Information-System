@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+        .code {
+            font-family: monospace;
+        }
+</style>
+
+<head>
+	<title>User Management Module</title>
+</head>
+
+<body>
+
+<h1>3. User Management Module</h1>
+<p>This module allows a system administrator to manage (to enter or update) the user information.</p>
+
+<div id="3.1">
+<h2>3.1 Register New User</h2>
+<p>System administrators can register new users for the radiology information system.</p>
+<p>Clicking the "<b>+User Account</b>" hyperlink will directe system administrators to the New User Register page.</p>
+<p>You need to provide the following information:</p>
+<ul>
+	<li>User Name</li>
+	<li>Password</li>
+	<li>User Class*</li>
+	<li>Choose Person**</li>
+</ul>
+<p>* &nbsp;&nbsp;<span class="code">Choose one from "Administrator", "Doctor", "Radiologist" and "Patient"</span>.</br>
+** <span class="code">Choose a Person from the database. See <a href="3_user_management_module.html#3.3">3.3 Register New Person</a> and <a href="3_user_management_module.html#3.4">3.4 Update Personal Information</a> for more information</span>.</p>
+<p>Click the "<b>Add</b>" button to register. Click the "<b>cancel</b>" button to cancel the registration.</p>
+</div>
+
+<div id="3.2">
+<h2>3.2 Update User Information</h2>
+<p>System administrators can update user information in the radiology information system.</p>
+<p>Enter the user name and click the "<b>GO</b>" button. System administrators will be able to manage user's account. </p>
+<p>You can only change:</p>
+<ul>
+	<li>Password</li>
+</ul>
+<p>Click the "<b>OK</b>" button to save the changes.</p>
+</div>
+
+<div id="3.3">
+<h2>3.3 Register New Person</h2>
+<p>System administrators can register new person for the radiology information system.</p>
+<p>Clicking the "<b>+Person</b>" hyperlink will directe system administrators to the New Person Register page.</p>
+<p>You need to provide the following information:</p>
+<ul>
+	<li>First Name</li>
+	<li>Last Name</li>
+	<li>Address</li>
+	<li>Email*</li>
+	<li>Phone</li>
+	<li>Password</li>
+</ul>
+<p><span class="code">* Note that the Email should be unique, which means that a person cannot have the same Email with any other perseon in our database.</span></p>
+<p>Click the "<b>Add</b>" button to register. Click the "<b>cancel</b>" button to cancel the registration.</p>
+</div>
+
+<div id="3.4">
+<h2>3.4 Update Personal Information</h2>
+<p>System administrators can update a person's personal information in the radiology information system.</p>
+<p>Select a person and click the "<b>GO</b>" button. System administrators will be able to manage personal information of this person. </p>
+<p>You can change any of the following fields:</p>
+<ul>
+	<li>First Name</li>
+	<li>Last Name</li>
+	<li>Address</li>
+	<li>Email*</li>
+	<li>Phone</li>
+	<li>Password</li>
+</ul>
+<p><span class="code">* Note that the Email should be unique, which means that a person cannot have the same Email with any other perseon in our database.</span></p>
+<p>Click the "<b>UPDATE</b>" button to save the changes.</p>
+</div>
+
+<div id="3.5">
+<h2>3.5 Update Patient's Family Doctor</h2>
+<p>System administrators can add a family doctor to a patient, or remove a family doctor from a patient.</p>
+<h3>3.5.1 Add a Family Doctor to a Patient</h2>
+<ul>
+	<li>Select a <b>Patient</b> and <b>Add</b> option from the drop down lists, and click the "<b>GO</b>" button.</li>
+	<li>System administrators will be directed to a page to add a family doctor to this patient.</li>
+	<li>Select a <b>Family Doctor</b> from the drop down list, and click "<b>Add</b>" button to add the selected family doctor to the patient.*</li>
+</ul>
+<p>* &nbsp;&nbsp;<span class="code">Note: when all of the family doctors are already assigned to the patient, the drop down list will be empty.</span></p>
+<h3>3.5.2 Remove a Family Doctor from a Patient</h2>
+<ul>
+	<li>Select a <b>Patient</b> and <b>Remove</b> option from the drop down lists, and click the "<b>GO</b>" button.</li>
+	<li>System administrators will be directed to a page to remove a family doctor from this patient.</li>
+	<li>Select a Family Doctor from the drop down list, and click "<b>Remove</b>" button to remove the selected family doctor from the patient.**</li>
+</ul>
+<p>** <span class="code">Note: when there is no family doctor assigned to the patient, the drop down list will be empty.</span></p>
+</div>
+	<FORM NAME='backForm' ACTION='Documentation.html' METHOD='post'>
+	<INPUT TYPE='submit' NAME='Back' VALUE='RETURN'>
+	</FORM>
+</body>
+</html>
